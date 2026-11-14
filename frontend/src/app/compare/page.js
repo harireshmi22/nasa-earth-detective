@@ -260,18 +260,18 @@ export default function ComparePage() {
                   fontSize={10}
                   tickLine={false}
                   minTickGap={40}
-                  fontFamily="DM Mono"
+                  fontFamily="IBM Plex Mono"
                 />
-                <YAxis stroke="#5e6d82" fontSize={10} tickLine={false} fontFamily="DM Mono" />
+                <YAxis stroke="#5e6d82" fontSize={10} tickLine={false} fontFamily="IBM Plex Mono" />
                 <Tooltip
                   contentStyle={{
                     backgroundColor: '#080e18',
                     borderColor: 'rgba(255,255,255,0.14)',
                     fontSize: '11px',
-                    fontFamily: 'DM Mono'
+                    fontFamily: 'IBM Plex Mono'
                   }}
                 />
-                <Legend wrapperStyle={{ fontSize: '11px', fontFamily: 'DM Mono', paddingTop: '10px' }} />
+                <Legend wrapperStyle={{ fontSize: '11px', fontFamily: 'IBM Plex Mono', paddingTop: '10px' }} />
 
                 {comparisonResults.map((reg) => (
                   <Line

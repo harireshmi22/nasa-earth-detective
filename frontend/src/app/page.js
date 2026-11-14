@@ -313,14 +313,14 @@ export default function HomePage() {
                     </linearGradient>
                   </defs>
                   <path className="stroke-[#273346] stroke-[1]" d="M42 24H748M42 68H748M42 112H748M42 156H748" />
-                  <text x="2" y="27" fill="#8290a4" fontSize="9" fontFamily="DM Mono">High</text>
-                  <text x="2" y="115" fill="#8290a4" fontSize="9" fontFamily="DM Mono">Avg.</text>
-                  <text x="10" y="159" fill="#8290a4" fontSize="9" fontFamily="DM Mono">Low</text>
-                  <text x="42" y="190" fill="#8290a4" fontSize="9" fontFamily="DM Mono">{years[0]}</text>
-                  <text x="360" y="190" fill="#8290a4" fontSize="9" fontFamily="DM Mono">
+                  <text x="2" y="27" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">High</text>
+                  <text x="2" y="115" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">Avg.</text>
+                  <text x="10" y="159" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">Low</text>
+                  <text x="42" y="190" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">{years[0]}</text>
+                  <text x="360" y="190" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">
                     {Math.round((Number(years[0]) + Number(years[1])) / 2)}
                   </text>
-                  <text x="714" y="190" fill="#8290a4" fontSize="9" fontFamily="DM Mono">{years[1]}</text>
+                  <text x="714" y="190" fill="#8290a4" fontSize="9" fontFamily="IBM Plex Mono">{years[1]}</text>
                   <path fill="url(#orbit-fade)" d={metrics.area} />
                   <path stroke="#81adff" strokeWidth="3" fill="none" strokeLinecap="round" d={metrics.path} />
                   <circle cx="748" cy="43" r="4" fill="#a9c8ff" />
@@ -505,7 +505,9 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row justify-between items-start pb-[42px] border-b border-white/[0.14] gap-8">
             <div>
               <Link href="#top" className="flex items-center gap-3 font-display font-bold text-lg tracking-[0.08em] text-[#f3f5f8]">
-                <span className="brand-mark">✳</span> ORBIT
+                <img src="/nasa-logo.svg" alt="NASA insignia" className="h-8 w-auto object-contain" />
+                <span>NASA SPACE</span>
+                <span className="font-mono text-[9px] font-normal tracking-[0.18em] text-[#9aa7bd]">EARTH DETECTIVE</span>
               </Link>
               <p className="text-[#a9b2c1] text-[12px] leading-[1.6] max-w-[300px] mt-[18px]">
                 A window into the missions, discoveries, and long-term Earth system trends exploring our changing planet with NASA satellite observations.
@@ -531,7 +533,7 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-between pt-[22px] text-[#7f899a] font-mono text-[9px] tracking-[0.1em] uppercase gap-3">
-            <span>© 2026 ORBIT — NASA Space Apps Challenge</span>
+            <span>© 2026 NASA Space Apps Challenge — Earth Detective</span>
             <span>Data sourced from NASA Earth Science Division Archives.</span>
             <a href="#top" className="hover:text-white transition">Made for the curious · ↑ Back to top</a>
           </div>

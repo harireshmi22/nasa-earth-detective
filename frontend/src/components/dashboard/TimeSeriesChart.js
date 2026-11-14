@@ -191,7 +191,7 @@ export default function TimeSeriesChart({
               stroke="#5e6d82"
               fontSize={10}
               tickLine={false}
-              fontFamily="DM Mono"
+              fontFamily="IBM Plex Mono"
               minTickGap={40}
             />
             <YAxis
@@ -199,7 +199,7 @@ export default function TimeSeriesChart({
               fontSize={10}
               tickLine={false}
               domain={[minVal, maxVal]}
-              fontFamily="DM Mono"
+              fontFamily="IBM Plex Mono"
             />
             <Tooltip content={<CustomTooltip />} />
 
